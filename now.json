@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "alias": "webvnc-installer.now.sh",
+  "routes": [
+    {
+      "src": "/",
+      "status": 301,
+      "headers": {
+        "Location": "webvnc-installer.sh"
+      }
+    }
+  ]
+}
