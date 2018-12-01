@@ -4,9 +4,10 @@
   "routes": [
     {
       "src": "/",
-      "status": 301,
+      "status": 302,
       "headers": {
-        "Location": "webvnc-installer.sh"
+        "Location": "webvnc-installer.sh",
+        "Content-Disposition": "attachment; filename='webvnc-installer.sh'"
       }
     }
   ]
