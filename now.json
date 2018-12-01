@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "alias": "webvnc-installer.now.sh",
+  "alias": ["webvnc-installer.now.sh", "webvnc-installer.drju.me"],
   "routes": [
     {
       "src": "/",
       "dest": "/webvnc-installer.sh",
       "headers": {
-        "Content-Disposition": "attachment; filename='webvnc-installer.sh'"
+        "Content-Disposition": "attachment; filename=\"webvnc-installer.sh\""
       }
     }
   ]

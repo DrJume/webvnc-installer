@@ -1,7 +1,14 @@
 # webvnc-installer
 
+> An automatic WebVNC system install script
+
 > Only for Debian-like server systems (Ubuntu Server, etc.)
 > **without a desktop environment preinstalled!**
+
+### Download
+```bash
+wget --content-disposition https://webvnc-installer.now.sh
+```
 
 ### Features
 - Installs the Lubuntu desktop environment
