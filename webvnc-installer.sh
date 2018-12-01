@@ -2,20 +2,20 @@
 
 # WebVNC Installer
 if [ "$#" -gt 2 ]; then
-	echo "Too many arguments!"
-	echo
+  echo "Too many arguments!"
+  echo
 fi
 
 if [ "$#" -ne 2 ]; then
-	echo "[WebVNC Installer] by DrJume"
-	echo "=========================="
-	echo "Arguments needed: <cert-domain> <cert-email>"
-	echo
-	echo "		cert-domain: Domain (or subdomain) used for HTTPS certificate."
-	echo "		cert-email: E-Mail address associated with your domain HTTPS certificate."
-	echo 
-	echo "~ root privileges needed!"
-	exit 1
+  echo "[WebVNC Installer] by DrJume"
+  echo "=========================="
+  echo "Arguments needed: <cert-domain> <cert-email>"
+  echo
+  echo "    cert-domain: Domain (or subdomain) used for HTTPS certificate."
+  echo "    cert-email: E-Mail address associated with your domain HTTPS certificate."
+  echo
+  echo "~ root privileges needed!"
+  exit 1
 fi
 
 if [ "$EUID" -ne 0 ]; then

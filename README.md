@@ -8,6 +8,10 @@
 ### Download
 ```bash
 wget --content-disposition https://webvnc-installer.now.sh
+
+chmod +x ./webvnc-installer.sh
+
+./webvnc-installer.sh
 ```
 
 ### Features
