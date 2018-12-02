@@ -25,7 +25,7 @@ fi
 
 echo "[WebVNC Installer] Installing lubuntu-desktop (and other packages)"
 apt update && apt-get upgrade -y
-apt install -y lubuntu-desktop wget autoconf gcc pkg-config libssl-dev libx11-dev libxtst-dev libvncserver-dev screen
+apt install -y lubuntu-desktop wget autoconf gcc pkg-config libssl-dev libx11-dev libxtst-dev libvncserver-dev screen automake python-minimal
 echo "[WebVNC Installer] Building and installing x11vnc"
 cd /root/
 wget https://github.com/LibVNC/x11vnc/archive/0.9.15.tar.gz
