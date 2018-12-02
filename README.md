@@ -21,3 +21,7 @@ chmod +x ./webvnc-installer.sh
 - Sets up noVNC server
 - Configures auto start (noVNC & x11vnc)
 - **Supports native graphical user login**
+
+### To do
+- [ ] Reverse proxy
+- [ ] Fix screen sleep lock out
