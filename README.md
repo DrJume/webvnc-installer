@@ -1,13 +1,12 @@
 # webvnc-installer
 
-> An automatic WebVNC system install script
+> Quickly builds a VNC cloud instance. Especially good when programming in a restricted network (e.g. schools)
 
-> Only for Debian-like server systems (Ubuntu Server, etc.)
-> **without a desktop environment preinstalled!**
+> Tested on Ubuntu Server 18.04
 
 ### Download
-```bash
-wget --content-disposition https://webvnc-installer.now.sh
+```shell
+wget https://raw.githubusercontent.com/DrJume/webvnc-installer/master/webvnc-installer.sh
 
 chmod +x ./webvnc-installer.sh
 
@@ -16,11 +15,11 @@ chmod +x ./webvnc-installer.sh
 
 ### Features
 - Installs the Lubuntu desktop environment
+- **Supports native graphical user login**
 - Compiles x11vnc server automatically
 - Creates & registers HTTPS certificate automatically
 - Sets up noVNC server
 - Configures auto start (noVNC & x11vnc)
-- **Supports native graphical user login**
 
 ### To do
 - [ ] Reverse proxy
