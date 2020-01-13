@@ -6,7 +6,7 @@
 
 ### Download
 ```shell
-wget https://raw.githubusercontent.com/DrJume/webvnc-installer/master/webvnc-installer.sh
+wget https://github.com/DrJume/webvnc-installer/releases/latest/download/webvnc-installer.sh
 
 chmod +x ./webvnc-installer.sh
 
