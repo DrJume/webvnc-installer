@@ -60,7 +60,7 @@ tar xfvz v$noVNC_version.tar.gz
 
 echo "[WebVNC Installer] Creating start scripts"
 echo "screen -dmS novnc /root/noVNC-$noVNC_version/utils/launch.sh --vnc localhost:5900 --listen 443 --cert /etc/letsencrypt/live/"$1"/certkey.pem" > novnc.sh
-echo "screen -dmS x11vnc sudo x11vnc -norc -allow 127.0.0.1 -defer 10 -find -forever -listen localhost -localhost -logfile /root/.x11vnc.log -wait 10 -xkb -auth /var/lib/lightdm/.Xauthority" > x11vnc.sh
+echo "screen -dmS x11vnc sudo x11vnc -norc -allow 127.0.0.1 -defer 10 -nevershared -find -forever -listen localhost -localhost -logfile /root/.x11vnc.log -wait 10 -xkb -auth /var/lib/lightdm/.Xauthority" > x11vnc.sh
 chmod +x novnc.sh x11vnc.sh
 
 echo "[WebVNC Installer] Setting lightdm hook to start x11vnc when login screen starts"
